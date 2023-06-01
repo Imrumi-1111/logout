@@ -6,6 +6,8 @@ import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import FormControl from "@mui/material/FormControl";
 import OutlinedInput from "@mui/material/OutlinedInput";
+import { FaTwitter } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 
 export default function ResetPasword() {
   return (
@@ -19,11 +21,8 @@ export default function ResetPasword() {
           style={{ width: "590px" }}
         >
           <div className={`${styles.flx} ${styles.alignCenter}`}>
-            <TwitterIcon
-              sx={{ fontSize: 30 }}
-              style={{ color: "rgb(29, 155, 240)" }}
-            />{" "}
-            Password Reset
+          
+            
           </div>
           <Select
             // value={age}

@@ -11,8 +11,12 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Button } from "@mui/material";
+import Logout from "../../atoms/button/logout/logout";
 
 function Sidebar() {
+  function handleLogout(){
+    console.log(Logout)
+   }
   return (
     <div className={styles.sidebar}>
       <TwitterIcon className={styles.sidebar_twitter_logo}/>
@@ -42,6 +46,8 @@ function Sidebar() {
       >
         Tweet
       </Button>
+
+      <Logout onLogout={handleLogout} />
     </div>
   );
 }
